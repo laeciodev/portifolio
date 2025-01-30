@@ -1,0 +1,151 @@
+:root{
+    --cor-principal: #121310;
+    --cor-secundaria: #95aa61;
+    --cor-terciaria: #899752;
+    --cor-quaternaria: #f6f8ee;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--cor-principal);    
+    color: var(--cor-quaternaria);
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 0px;
+}
+
+.apresentacao__imagem{
+    max-width: 300px;
+    border-radius: 50%;
+
+
+}
+
+.apresentacao__titulo{
+    font-size: 2.25rem ;
+    font-family: 'Krona One';
+}
+
+.apresentacao__paragrafo{
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.nome, .staks {
+    color: var(--cor-secundaria);
+}
+
+.nome:hover, .staks:hover{
+    color: #d6e68a;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: 'Krona One';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link{
+    color: var(--cor-quaternaria);
+    border: #d6e68a solid 2px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+}
+
+.linkedin, .github {
+    max-width: 30px;
+    height: auto;
+}
+
+.apresentacao__links__link:hover{
+    background-color: #d6e68a;
+    color: #121310;
+}
+
+.rodape{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 24px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+}
+
+@media (max-width: 1200px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
