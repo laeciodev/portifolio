@@ -126,9 +126,9 @@ body{
     padding: 24px;
     font-size: 1.5rem;
     font-weight: 400;
-    /* position: fixed;
+    position: fixed;
     bottom: 0;
-    width: 100%; */
+    width: 100%;
 }
 
 @media (max-width: 1200px){
